@@ -1,5 +1,5 @@
 <?php
-// require __DIR__ . '/dbconnect.php';
+require_once('dbconnect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
