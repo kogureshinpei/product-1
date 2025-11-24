@@ -44,11 +44,13 @@ nav a:hover{
 /* ------------------ */
 .left-side{
     position: absolute;
-    margin-top: 100px;
-    height: calc(100vh - 100px);
+    margin-top: 125px;
+    margin-left: -5px;
+    height: calc(100vh - 120px);
     width: 250px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: black solid 2px;
     border-radius: 8px;
 }
 
@@ -56,5 +58,29 @@ nav a:hover{
 main{
     position: absolute;
     margin-left: 250px;
-    margin-top: 100px;
+    margin-top: 130px;
+    height: 80vh;
+}
+
+
+.splide__slide {
+  background-color: aqua;
+  border-radius: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+.splide {
+  position: relative;
+  visibility: visible !important;
+  margin: 0 auto;
+  width: calc(100vw - 250px - 40px);
+  height: 80vh;
+}
+.splide__track{
+    height: 100%;
 }

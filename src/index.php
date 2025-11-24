@@ -7,9 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANABI HOUSE -main page -</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" >
-    <script src="./js/index.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" > -->
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
 <header class="header">
@@ -32,14 +37,30 @@
             <li>タスクの内容</li>
         </ul>
     </div>
+    <a href="./auth/login.php">login</a>
 </section>
 <main>
-    <div>
-        <p>日にち</p>
-        <p>text</p>
-        <p>お気に入り有無</p>
+    <div class="splide" id="diary_slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <p class="p_date">日にち1</p> <!-- beforeで’_’を追加して見やすくする -->
+                    <p class="p_text">text</p>
+                    <p class="p_favorite">お気に入り有無</p>
+                </li>
+                <li class="splide__slide">
+                    <p class="p_date">日にち2</p>
+                    <p class="p_text">text</p>
+                    <p class="p_favorite">お気に入り有無</p>
+                </li>
+                <li class="splide__slide">
+                    <p class="p_date">日にち3</p>
+                    <p class="p_text">text</p>
+                    <p class="p_favorite">お気に入り有無</p>
+                </li>
+            </ul>
+        </div>
     </div>
-    <a href="./auth/login.php">login</a>
 </main>
 </body>
 </html>
